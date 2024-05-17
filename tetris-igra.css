@@ -1,0 +1,108 @@
+html, body {
+    text-align: center;
+    font-size: 17px;
+    background-color: #333;
+    background-color: #222;
+    font-family: 'Arial', sans-serif;
+    /* height: 100vh; */
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+div#container{
+    display: inline-block;
+}
+#container-flex{
+    /* border: 5px solid black; */
+    /* border-right: 0px; */
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+#container-grid{
+    background-color: #E9F4CA;
+    background-color: #1E2C31;
+    background-color: #333;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    display: inline-block; 
+}
+#grid{
+    border-spacing : 0;
+    position : relative;
+    /* border-collapse: collapse; */
+}
+.field{
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#container-info{
+    background-color: black;
+    background-color: #2A3A41;
+    background-color: #2f2f2f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info-div{
+    width: 90%;
+    background-color: #E9F4CA;
+    background-color: #8b8b8b;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    /* border: 2px solid grey; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+#grid-next{
+    margin:2px;
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+div#nextShape-div{
+    margin-top: 50px;
+}
+
+
+button#kill{
+    text-align: center;
+    font-size: 20px;
+    font-size: 20px; 
+    display:none
+}
+
+#controls {
+    color: white;
+}
+
+
+.info-div span {
+    transition: color 0.7s ease-in-out;
+}
+.light-up {
+    color: rgb(176, 19, 19);
+    /* font-weight: bold; */
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Playing</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="tetris-igra.js"></script>
+    <link rel="stylesheet" href="tetris-igra.css"></style>
+</head>
+<body>
+    <div id="container">
+        <div id="container-flex">
+            <div id="container-grid">
+                <button id="kill">STOP</button>
+
+                <table id="grid">
+        
+                </table>
+            </div>
+    
+            <div id="container-info">
+                <div id="score-div" class="info-div">
+                    <span class="title">Score</span><br>
+                    <span id="score">
+                        0
+                    </span>
+                </div>
+                <div id="level-div" class="info-div">
+                    <span class="title">Level</span><br>
+                    <span id="level">
+                        0
+                    </span>
+                </div>
+                <div id="lines-div" class="info-div">
+                    <span class="title">Lines</span><br>
+                    <span id="lines">
+                        0
+                    </span>
+                </div>
+                <div id="nextShape-div" class="info-div">
+                    <table id="grid-next"></table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="controls">
+            <span>Press P for Pause/Resume</span><br>
+            <span>Press R to start over</span><br>
+            <span>Press H to enter Home page</span>
+        </div>
+    </div>
+    
+</body>
+</html>

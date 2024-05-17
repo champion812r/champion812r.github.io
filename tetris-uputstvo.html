@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Home</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="tetris-uputstvo.js"></script>
+    <link rel="stylesheet" href="tetris-uputstvo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tetris</h1>
+        </header>
+        <main>
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <p> 
+                    Welcome to Tetris game! Please choose shapes, initial level(difficulty) and controls. Shapes can be controlled either using arrows or a mouse/touchpad.
+
+                    <span id="mouse-instructions">Move shapes using mouse. <b>Left-Click</b> places a shape immediately. <b>Right-Click</b> and <b>Scroll-Up</b> both rotate a shape. <b>Scroll-Down</b> moves a shape down.</span>
+                    <span id="keyboard-instructions">Move shapes using arrows. <b>Up-Arrow</b> rotates a shape. <b>Space</b> places a shape immediately.</span>
+                    
+                    
+                </p>
+
+            </section>
+            <section class="settings">
+                <div class="difficulty">
+                    <h2>Game difficulty</h2>
+                    <select id="difficulty">
+                        <option value="1">Easy</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Hard</option>
+                    </select>
+                </div>
+                <div class="control-option" id="control-option">
+                    <h2>Control using</h2>
+                    <label id="keyboard-label">
+                        <input type="radio" name="control" value="keyboard" id="keyboard" checked>
+                        Keyboard
+                    </label>
+                    <label id="mouse-label">
+                        <input type="radio" name="control" value="mouse" id="mouse">
+                        Mouse
+                    </label>
+                </div>
+            </section>
+            <section id="shapes">
+                <div class="shape">
+                    <h2>Shapes</h2>
+                    <div class="shape-selection" id="shape-selection">
+                        <!-- dinamicki -->
+                    </div>
+                </div>
+            </section>
+            <div class="buttons">
+                <button id="start-button">Start</button>
+                <button id="scoreboard-button">Scoreboard</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

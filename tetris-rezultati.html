@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Scoreboard</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="tetris-rezultati.js"></script>
+    <link rel="stylesheet" href="tetris-rezultati.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Scoreboard</h1>
+        </header>
+        <main>
+            <section class="top-scores">
+                <h2>Top 5 Scores</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Username</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="top-scores-body">
+                        <!-- dinamicki -->
+                    </tbody>
+                </table>
+            </section>
+            <section class="last-result">   
+                <h2>Last Score</h2>
+                <table id="last-score">
+                    <tr>
+                        <th class="align-right">Username:</th>
+                        <td class="align-left" id="last-username-value"></th>
+                    </tr>
+                    <tr>
+                        <th class="align-right">Score:</th>
+                        <td class="align-left" id="last-score-value"></td>
+                    </tr>
+                </table>
+            </section>
+            <div class="buttons">
+                <button id="home-button">Home page</button>
+                <button id="play-again-button">Play Again</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
